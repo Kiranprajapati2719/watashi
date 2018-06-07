@@ -1,51 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
 
-body {
-  font-family: "Nanum Gothic", sans-serif;
-}
-
-/**
-* Make the field a flex-container, reverse the order so label is on top.
-*/
-.field {
-  display: flex;
-  margin-top: 1vh;
-  flex-flow: column-reverse;
-  /* margin-bottom: 1em; */
-}
-
-/**
-* Add a transition to the label and input.
-*/
-label,
-input {
-  transition: all 0.4s;
-  touch-action: manipulation;
-}
-
-/**
-* Translate down and scale the label up to cover the placeholder,
-* when following an input (with placeholder-shown support).
-* Also make sure the label is only on one row, at max 2/3rds of the
-* field—to make sure it scales properly and doesn't wrap.
-*/
-/* Large font style */
-input:placeholder-shown + label {
-  cursor: text;
-  padding-left: 5px;
-  width: fit-content;
-  font-size: 0.75em;
-  transform-origin: left bottom;
-  transform: translate(0, 2rem) scale(1.5);
-}
-/**
-* When the element is focused, remove the label transform.
-* Also, do this when the placeholder is _not_ shown, i.e. when 
-* there's something in the input at all.
-*/
-/* Small font style */
-input:not(:placeholder-shown) + label,
-input:focus + label {
-  transform: translate(0, 0) scale(1);
-  padding: 0 0 10px 0;
+form {
+  background: #ffffff;
+  opacity: 0.5;
 }

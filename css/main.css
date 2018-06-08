@@ -3,11 +3,9 @@
 .form-group:first-child {
   top: 30% !important;
   left: 40% !important;
-  /* display: flex; */
-  flex: 1 !important;
-  margin: 0 auto !important;
 }
 
-.form-group {
-  display: flex !important;
+.form-group:nth-child(2) {
+  top: 45% !important;
+  left: 40% !important;
 }

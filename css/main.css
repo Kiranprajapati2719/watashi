@@ -1,18 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
 body {
-  /* color: #cd5f51 !important; */
-  /* color: #eb4b4b; */
   color: #ffaea3;
 }
 
 #overlay {
   border-radius: 20px;
   background: #2f363d !important;
-  /* z-index: 1 !important; */
   top: 25vh;
   margin: 0 auto;
   height: 55vh;
-  /* width: 40vw; */
   opacity: 0.4;
 }
 

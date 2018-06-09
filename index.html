@@ -13,33 +13,40 @@
         <section>
             <div class="container-fluid ">
                 <div class="row">
-                    <div class="col-md-12 p-0 d-flex justify-content-center">
+                    <div class="col-md-12 p-0 d-flex justify-content-center" id="parent">
+                        <div class="position-absolute col-md-4 d-flex" id="overlay"></div>
                         <div class="form-group position-absolute" id="form1">
                             <img src="final_dota.png" class="img-fluid">
                             <!-- <h4 class="text-center m-0">Early Access </h4> -->
-                            <p class="text-center mt-2" id="heroText">Sign up for early access</p>
-                            <div class="form-group mt-2 justify-content-center">
+                            <h2 class="text-center mt-2" id="heroText">Early Access</h2>
+                            <div class="mt-5 px-5">
+                                <div class="row mt-2 mb-3">
+                                    <div class="col m-0">
+                                        <input type="text" class="input-sm form-control" id="fname" placeholder="First Name">
+                                    </div>
+                                    <div class="col m-0">
+                                        <input type="text" class="input-sm form-control" id="fname" placeholder="Last Name">
+                                    </div>
+                                </div>
                                 <input type="email" class="input-sm form-control" id="inputEmail" placeholder="Enter email">
-                                <small class="form-text">We'll never share your email with anyone else.</small>
-                                <button type="button" class="btn btn-outline-primary d-flex mt-5 mx-auto">Primary</button>
+                                <small class="">We'll never share your email with anyone else.</small>
+
                             </div>
+                            <button type="button" class="btn btn-outline-primary d-flex mt-5 mx-auto">Primary</button>
                         </div>
-                        <img class="img-fluid w-100" id="img" src="dota1.jpg">
+                        <img class="h-100 w-100" id="img" src="dota1.jpg">
                     </div>
                 </div>
-
-
             </div>
         </section>
 
         <script>
-            let x = 2;
+            let start = 2; //index
+            let time = 10000; // interval
             setInterval(function () {
-                document.querySelector('#img').src = `dota${x}.jpg`;
-                // (x > 5) ? x++ : x = 1;
-                console.log(x);
-                x++;
-            }, 2000);
+                document.querySelector('#img').src = `dota${start}.jpg`;
+                (start === 4) ? start = 1 : start++;
+            }, time);
         </script>
 
     </body>

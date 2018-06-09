@@ -1,26 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
 body {
-  color: #cd5f51 !important;
-  /* color: #eb4b4b;/ */
+  /* color: #cd5f51 !important; */
+  /* color: #eb4b4b; */
+  color: #ffaea3;
 }
 
-/* #intro-form {
-  top: 15%;
-  left: 35%;
+#overlay {
   border-radius: 20px;
-  background: #303030 !important;
-  z-index: 200 !important;
-  height: 60vh;
-  width: 30vw;
-  opacity: 0.5;
-} */
+  background: #2f363d !important;
+  /* z-index: 1 !important; */
+  top: 25vh;
+  margin: 0 auto;
+  height: 55vh;
+  /* width: 40vw; */
+  opacity: 0.4;
+}
 
 #form1 {
   height: 100vh;
   width: 30vw;
-  /* background: aqua; */
+  z-index: 2;
 }
 
 #heroText {
-  margin-top: 2rem;
+  font-family: serif;
 }
